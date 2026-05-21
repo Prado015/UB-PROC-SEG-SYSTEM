@@ -14,7 +14,20 @@
             --gray-100:#f8fafc;--gray-50:#f9fafb;--white:#ffffff;
             --blue:#3b82f6;--blue-light:#eff6ff;--green:#22c55e;
             --orange:#f97316;--purple:#8b5cf6;
-        }
+          }
+            .logo-icon {
+            background: none !important;
+            background-color: transparent !important;
+            border: none;
+            border-radius: 0;
+            overflow: visible;
+            width: 40px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+          }  
         body{font-family:'Inter',sans-serif;background:var(--gray-100);color:var(--gray-900);line-height:1.6}
         /* HEADER */
         .header{background:var(--white);padding:1.25rem 0;border-bottom:2px solid var(--gray-200);position:sticky;top:0;z-index:100;box-shadow:0 4px 20px rgba(0,0,0,.05)}
@@ -247,7 +260,9 @@
 <div class="header">
     <div class="header-content">
         <div class="logo">
-            <div class="logo-icon">UB</div>
+           <div class="logo-icon">
+               <img src="logo_no_bg.png" alt="UB Logo" style="width:40px;height:40px;object-fit:contain;">
+            </div>
             <span>UB Procurement Requests Items</span>
         </div>
         <nav class="nav">
